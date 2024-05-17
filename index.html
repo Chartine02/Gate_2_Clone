@@ -30,12 +30,14 @@
 
   <body>
     <div
-      class="bg-cover h-screen relative"
+      class="bg-cover h-[70vh] w-full object-cover hidden md:block md:h-screen relative"
       style="
         background: url(https://www.up.pt/portal/media/images/ijup-2024_12.format-jpeg.jpg);
       "
     >
-      <section class="bg-zinc-800 text-white flex justify-between px-32 h-12">
+      <section
+        class="bg-zinc-800 hidden text-white md:flex justify-between px-32 h-12"
+      >
         <div class="flex">
           <div class="flex items-center gap-0 flex-row">
             <h3 class="text-sm font-medium">About the University</h3>
@@ -70,11 +72,16 @@
         </div>
       </section>
       <nav
-        class="flex justify-between md:px-32 bg-neutral-300 md:h-20 items-center"
+        class="flex justify-between h-20 px-4 md:px-32 bg-neutral-300 md:h-28 items-center"
       >
-        <img src="images/logo.svg" alt="" class="w-1/2 md:w-1/4" />
+        <img src="images/logo.svg" alt="" class="hidden md:block md:w-96" />
+        <div class="flex gap-4 md:hidden">
+          <img src="images/bars.svg" alt="" class="w-1/12 md:hidden" />
+
+          <img src="images/m-logo.svg" alt="" class="h-12" />
+        </div>
         <div class="md:hidden">
-          <i class="fa-solid fa-bars text-whit text-2xl md:hidden"></i>
+          <img src="images/mini-bars.svg" alt="" class="h-12" />
         </div>
         <div>
           <div class="text-whit md:flex items-center text-xl gap-12 hidden">
@@ -97,7 +104,7 @@
         </div>
       </nav>
       <div class="font-lato">
-        <div class="flex justify-between pt-80 w-">
+        <div class="flex justify-between pt-20 md:pt-80 w-">
           <div
             class="bg-[rgb(161,138,77)] text-white w-12 h-10 flex justify-center items-center text-center p-4"
           >
@@ -112,13 +119,66 @@
         </div>
       </div>
     </div>
+    <nav
+      class="flex justify-between h-20 px-4 md:px-32 md:hidden bg-neutral-300 md:h-28 items-center"
+    >
+      <img src="images/logo.svg" alt="" class="hidden md:block md:w-96" />
+      <div class="flex gap-4 md:hidden">
+        <img src="images/bars.svg" alt="" class="w-1/12 md:hidden" />
+
+        <img src="images/m-logo.svg" alt="" class="h-12" />
+      </div>
+      <div class="md:hidden">
+        <img src="images/mini-bars.svg" alt="" class="h-12" />
+      </div>
+      <div>
+        <div class="text-whit md:flex items-center text-xl gap-12 hidden">
+          <div class="text-xl font-bold flex gap-4">
+            <a href="">STUDY</a>
+            <a href="">RESEARCH</a>
+            <a href="">INNOVATE</a>
+            <a href=""> LIVE</a>
+            <a href="">EXPLORE</a>
+          </div>
+
+          <div>
+            <div class="flex gap-4 items-center">
+              <p>Search</p>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="bg-black w-full h-[1px]"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="relative md:hidden">
+      <img
+        src="https://www.up.pt/portal/media/images/ijup-2024_12.format-jpeg.jpg"
+        alt=""
+        class="[70vh]"
+      />
+      <div
+        class="bg-stone-800 bg-opacity-80 absolute bottom-0 w-full md:bottom-24 md:left-52 px-4 py-4 flex justify-self-start md:mx-2 flex-col gap-5 text-white md:w-[500px]"
+      >
+        <h2 class="font-bold text-xl">
+          IJUP 2024: New talents in science reveal themselves at U.Porto
+        </h2>
+        <p class="hidden md:block">
+          More than 1,000 studentsare taking part in theU.Porto Youth reesearch
+          Meeting from 8 to 10 May
+        </p>
+        <button class="bg-[rgb(161,138,77)] w-20 text-black font-bold">
+          See More
+        </button>
+      </div>
+    </div>
     <div
-      class="bg-stone-800 bg-opacity-80 absolute bottom-24 left-52 px-4 py-4 flex justify-self-start mx-2 flex-col gap-5 text-white w-[500px]"
+      class="bg-stone-800 bg-opacity-80 hidden absolute bottom-[200px] w-full md:bottom-24 md:left-52 px-4 py-4 md:flex justify-self-start md:mx-2 flex-col gap-5 text-white md:w-[500px]"
     >
       <h2 class="font-bold text-2xl">
         IJUP 2024: New talents in science reveal themselves at U.Porto
       </h2>
-      <p>
+      <p class="hidden md:block">
         More than 1,000 studentsare taking part in theU.Porto Youth reesearch
         Meeting from 8 to 10 May
       </p>
@@ -126,10 +186,10 @@
         See More
       </button>
     </div>
-    <section class="font-lato py-20 px-40">
+    <section class="font-lato px-4 md:py-20 py-10 md:px-40">
       <h2 class="text-5xl font-light text-[rgb(161,138,77)]">Study</h2>
-      <div class="flex my-10 gap-20">
-        <p class="font-semibold text-3xl w-1/3">Your future is here!</p>
+      <div class="flex md:flex-row flex-col my-10 md:my-10 gap-8 md:gap-20">
+        <p class="font-semibold text-3xl md:w-1/3">Your future is here!</p>
         <p class="font-light w-2/3 text-lg">
           Gathering the most complete offer of training programmes in Portugal,
           the 14 faculties of the U.Porto offer unique conditions to those who
@@ -137,10 +197,10 @@
           the labour market.
         </p>
       </div>
-      <div class="bg-black bg-opacity-15 w-full h-[1px] my-20"></div>
+      <div class="bg-black bg-opacity-15 w-full h-[1px] my-10 md:my-20"></div>
       <h1 class="font-semibold text-3xl">Which course are you looking for?</h1>
-      <div class="flex gap-4 my-6">
-        <div class="w-2/3 flex flex-col gap-4">
+      <div class="flex md:flex-row flex-col gap-4 my-6">
+        <div class="md:w-2/3 flex flex-col gap-4">
           <div
             class="border-2 border-black px-4 py-2 font-bold flex justify-between items-center"
           >
@@ -158,7 +218,7 @@
             Search
           </button>
         </div>
-        <div class="w-1/3">
+        <div class="md:w-1/3 md:py-0 py-12">
           <h3 class="font text-2xl">Courses from A to Z:</h3>
           <div class="text-2xl font-light underline">
             <a href="">Bachelor's and Integrated Master’s Degrees</a>
@@ -167,15 +227,17 @@
         </div>
       </div>
     </section>
-    <section class="bg-zinc-100 px-40 py-20 text-[rgb(161,138,77)]">
-      <div class="flex justify-between items-center">
+    <section class="bg-zinc-100 px-4 md:px-40 md:py-20 text-[rgb(161,138,77)]">
+      <div
+        class="flex md:justify-between gap-3 flex-col md:flex-row md:items-center"
+      >
         <h2 class="text-5xl font-light">News</h2>
         <a href="" class="font-semibold">
           All news <i class="pl-2 text-md fa-solid fa-circle-chevron-right"></i
         ></a>
       </div>
 
-      <div class="grid grid-cols-3 gap-6 py-12">
+      <div class="grid md:grid-cols-3 gap-6 md:px-0 py-12">
         <div class="bg-white flex flex-col gap-20 justify-between">
           <div class="py-2 px-4">
             <h3 class="font-ligh text-xl text-[rgb(161,138,77)]">Desporato</h3>
@@ -191,7 +253,7 @@
             />
           </div>
         </div>
-        <div class="bg-white flex flex-col w- gap-20 justify-between">
+        <div class="bg-white md:flex hidden flex-col w- gap-20 justify-between">
           <div class="py-2 px-4">
             <h3 class="font-ligh text-xl text-[rgb(161,138,77)]">Desporato</h3>
             <p class="font-semibold text-2xl">
@@ -206,7 +268,9 @@
             />
           </div>
         </div>
-        <div class="bg-white flex flex-col w-/3 gap-20 justify-between">
+        <div
+          class="bg-white hidden md:flex flex-col w-/3 gap-20 justify-between"
+        >
           <div class="py-2 px-4">
             <h3 class="font-ligh text-xl text-[rgb(161,138,77)]">Desporato</h3>
             <p class="font-semibold text-2xl">
@@ -222,7 +286,7 @@
           </div>
         </div>
       </div>
-      <div class="flex gap-2">
+      <div class="flex px-4gap-2">
         <div
           class="bg-neutral-400 text-white w-12 h-10 flex justify-center items-center text-center p-4"
         >
@@ -235,16 +299,16 @@
         </div>
       </div>
     </section>
-    <section class="py-20 px-40 font-lato text-xl font-light">
-      <div class="flex gap-52">
+    <section class="md:py-20 md:px-40 px-4 py-10 font-lato text-xl font-light">
+      <div class="flex md:flex-row flex-col gap-10 md:gap-52">
         <div class="relative">
           <img
             src="https://www.up.pt/portal/static/images/minerva_01.png"
             alt=""
-            class="h-[350px] ml-40"
+            class="h-[350px] hidden md:block ml-40"
           />
           <h2
-            class="absolute top-2 text-5xl w-80 font-light text-[rgb(161,138,77)]"
+            class="md:absolute top-2 text-4xl md:text-5xl w-80 font-light text-[rgb(161,138,77)]"
           >
             We are a University of Excellence!
           </h2>
@@ -284,9 +348,9 @@
       </div>
     </section>
     <div class="bg-zinc-100 h-1 w-full"></div>
-    <section class="px-40 py-20 font-lato">
+    <section class="md:px-40 md:py-20 py-10 px-4 font-lato">
       <h2 class="text-5xl text-[rgb(161,138,77)] font-light">Research</h2>
-      <div class="flex py-10 gap-4">
+      <div class="flex md:flex-row flex-col py-10 gap-4">
         <div class="flex flex-col gap-4">
           <h2 class="font-bold text-3xl">Research University</h2>
           <p class="font-light text-xl">
@@ -316,22 +380,26 @@
         </div>
       </div>
     </section>
-    <section class="bg-[rgb(161,138,77)] text-white px-40 py-20">
-      <div class="flex justify-center gap-32">
+    <section
+      class="bg-[rgb(161,138,77)] text-white relative px-4 py-10 md:px-40 md:py-20"
+    >
+      <div class="flex md:flex-row flex-col items-center justify-center gap-32">
         <img src="images/white-bell.svg" alt="" class="w-28" />
-        <!-- <a href="" class="font-semibold text-white">
-          Learn more
-          <i class="pl-2 text-md fa-solid fa-circle-chevron-right"></i
-        ></a> -->
+        <div class="absolute right-8 top-10 md:top-20 md:right-40">
+          <a href="" class="font-semibold text-white">
+            Learn more
+            <i class="pl-2 text-md fa-solid fa-circle-chevron-right"></i
+          ></a>
+        </div>
       </div>
       <div
         class="flex flex-col gap-4 font-lato py-10 items-center justify-center"
       >
-        <h1 class="font-bold text-4xl">U.PORTO IN FIGURES</h1>
-        <p class="text-5xl font-light">2022/2023</p>
+        <h1 class="font-bold mx-12 text-center text-4xl">U.PORTO IN FIGURES</h1>
+        <p class="text-3xl md:text-5xl font-light">2022/2023</p>
       </div>
       <div class="w-full bg-white h-[1px]"></div>
-      <div class="flex justify-around py-6">
+      <div class="flex md:flex-row flex-col gap-8 justify-around py-6">
         <div class="flex flex-col items-center">
           <h1 class="font-bold text-4xl">+300</h1>
           <p class="text-3xl font-light">Courses</p>
@@ -346,11 +414,11 @@
         </div>
       </div>
     </section>
-    <section class="px-40 py-20 font-lato">
+    <section class="md:px-40 md:py-20 px-4 py-10 font-lato">
       <h2 class="text-5xl text-[rgb(161,138,77)] font-light">
         Frequently asked questions
       </h2>
-      <div class="py-2">
+      <div class="py-2 hidden md:block">
         <div class="flex gap-6 py-4 font-semibold text-neutral-400">
           <a href="" class="text-black"> International Students </a>
           <a href="">Prospective Students</a>
@@ -361,10 +429,23 @@
         <div class="w-1/6 h-[1px] bg-black"></div>
         <div class="w-full h-[1px] bg-neutral-300"></div>
       </div>
-      <div class="flex gap-6 py-8">
-        <div class="flex flex-col w-1/2 justify-between">
+      <div class="flex md:flex-row flex-col gap-6 py-8">
+        <div class="flex flex-col md:w-1/2 justify-between">
           <div class="flex flex-col gap-4">
-            <h2 class="font-bold text-2xl">International Students</h2>
+            <div
+              class="border-2 md:hidden border-black px-4 py-2 font-bold flex justify-between items-center"
+            >
+              <p>International Students</p>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <h2 class="font-bold text-2xl hidden md:block">
+              International Students
+            </h2>
+            <img
+              src="https://www.up.pt/portal/media/images/gate-estudantes-internacionais.format-jpeg.jpg"
+              alt=""
+              class="md:hidden"
+            />
             <p class="font-light text-lg">
               Welcome! In this area you will find the answers you need to start
               and make the most of your experience at the University. We hope to
@@ -377,7 +458,7 @@
               ></a>
             </div>
           </div>
-          <div class="flex gap-2">
+          <div class="md:flex hidden gap-2">
             <div
               class="bg-neutral-400 text-white w-12 h-10 flex justify-center items-center text-center p-4"
             >
@@ -390,7 +471,7 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-1/2 hidden md:block">
           <img
             src="https://www.up.pt/portal/media/images/gate-estudantes-internacionais.format-jpeg.jpg"
             alt=""
@@ -398,14 +479,18 @@
         </div>
       </div>
     </section>
-    <footer class="bg-cover h-screen w-full relative bg-zinc-800">
+    <footer class="bg-cover md:h-screen w-full relative bg-zinc-800">
       <div class="font-lato text-white">
-        <div class="px-40 py-20">
+        <div class="md:px-40 md:py-20 px-4">
           <div class="font-light font-lato top-0 text-white">
-            <div class="flex gap-32">
+            <div class="flex md:flex-row flex-col md:gap-32">
               <h2 class="font-semibold text-[rgb(161,138,77)]">Media</h2>
-              <div class="flex items-start gap-20 justify-between">
-                <div class="flex justify-start items-start gap-2 flex-col">
+              <div
+                class="flex md:flex-row flex-col items-start gap-3 md:gap-20 justify-between"
+              >
+                <div
+                  class="flex flex-row justify-start items-start md:gap-2 md:flex-col"
+                >
                   <a href=""> U.Porto News </a
                   ><a href=""> Brochures and Presentations</a>
                 </div>
@@ -416,12 +501,14 @@
             </div>
           </div>
           <div class="font-light font-lato py-6 text-white">
-            <div class="flex py-10">
+            <div class="flex md:flex-row flex-col py-10">
               <h2 class="font-semibold w-40 text-[rgb(161,138,77)]">
                 U.Porto Portals
               </h2>
               <div class="flex flex-col gap-4">
-                <div class="flex justify items-start">
+                <div
+                  class="flex md:flex-row flex-col gap-3 justify items-start"
+                >
                   <a href=""> CDUP - U.Porto Sports Centre </a>
                   <a href="">
                     Social Support Services of the University of Porto
@@ -430,7 +517,9 @@
                   <a href=""> Former Students Portal</a>
                   <a href="">UPdigital Portal</a>
                 </div>
-                <div class="flex justify-between items-start">
+                <div
+                  class="flex md:flex-row flex-col gap-3 justify-between items-start"
+                >
                   <a href=""> CDUP - U.Porto Sports Centre </a>
                   <a href="">
                     Social Support Services of the <br />
@@ -439,7 +528,9 @@
                   <a href=""> Former Students Portal</a>
                   <a href="">UPdigital Portal</a>
                 </div>
-                <div class="flex justify-between items-start">
+                <div
+                  class="flex md:flex-row flex-col gap-3 justify-between items-start"
+                >
                   <a href=""> CDUP - U.Porto Sports Centre </a>
                   <a href="">
                     Social Support Services of the <br />
@@ -454,7 +545,9 @@
 
           <div class="w-full h-[2px] bg-white bg-opacity-20 my-8"></div>
 
-          <div class="flex items-start justify-between">
+          <div
+            class="flex md:flex-row flex-col gap-3 items-start justify-between"
+          >
             <div
               class="text-white flex items-center gap-8 text-2xl justify-center"
             >
@@ -480,7 +573,9 @@
             </div>
           </div>
         </div>
-        <div class="flex px-40 gap-8 font-lato font-light">
+        <div
+          class="flex md:flex-row flex-col px-4 md:px-40 gap-3 py-10 md:py-0 md:gap-8 font-lato font-light"
+        >
           <h1 class="font-semibold">© University of Porto 2024</h1>
           <a href="">Personal Data Protection </a>
           <a href="">Privacy Policy</a>
@@ -490,7 +585,7 @@
       <img
         src="https://www.up.pt/portal/static/images/img_minerva_footer.png"
         alt=""
-        class="h-3/4 absolute top-0 -ml-72"
+        class="h-3/4 absolute hidden md:block top-0 -ml-72"
       />
     </footer>
   </body>
