@@ -157,7 +157,7 @@
         alt=""
         class="h-[50vh] object-cover"
       />
-      <div class="flex justify-between w-full absolute top-20">
+      <div class="flex justify-between w-full absolute top-24">
         <div
           class="bg-[rgb(161,138,77)] text-white w-12 h-10 flex justify-center items-center text-center p-4"
         >
@@ -250,11 +250,13 @@
         ></a>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-6 md:px-0 py-12">
-        <div class="bg-white flex flex-col gap-20 justify-between">
+      <div class="grid md:grid-cols-5 gap-6 md:px-0 py-10">
+        <div
+          class="bg-white md:col-span-2 flex flex-col gap-20 justify-between"
+        >
           <div class="py-2 px-4">
             <h3 class="font-ligh text-xl text-[rgb(161,138,77)]">Desporato</h3>
-            <p class="font-semibold text-2xl">
+            <p class="font-semibold text-black text-2xl">
               U.Porto vaiorganizar Europeu Universitario de Futebol em 2027
             </p>
           </div>
@@ -266,11 +268,15 @@
             />
           </div>
         </div>
-        <div class="bg-white md:flex hidden flex-col w- gap-20 justify-between">
+        <div
+          class="bg-white md:flex md:col-span-2 hidden flex-col w- gap-20 justify-between"
+        >
           <div class="py-2 px-4">
-            <h3 class="font-ligh text-xl text-[rgb(161,138,77)]">Desporato</h3>
-            <p class="font-semibold text-2xl">
-              U.Porto vaiorganizar Europeu Universitario de Futebol em 2027
+            <h3 class="font-ligh text-xl text-[rgb(161,138,77)]">
+              Campus e Comunidade | Ciencia e lnovacao | Multimedia | Video
+            </h3>
+            <p class="font-semibold text-black text-2xl">
+              Mais de 1000 estidantes foram ao IJUO "abrir as portas" da Ciencia
             </p>
           </div>
           <div>
@@ -285,9 +291,9 @@
           class="bg-white hidden md:flex flex-col w-/3 gap-20 justify-between"
         >
           <div class="py-2 px-4">
-            <h3 class="font-ligh text-xl text-[rgb(161,138,77)]">Desporato</h3>
-            <p class="font-semibold text-2xl">
-              U.Porto vaiorganizar Europeu Universitario de Futebol em 2027
+            <h3 class="font-ligh text-xl text-[rgb(161,138,77)]">Cultura</h3>
+            <p class="font-semibold text-black text-2xl">
+              MHNC-UP abre para celebrar os Ciencia
             </p>
           </div>
           <div>
@@ -295,11 +301,12 @@
             <img
               src="https://noticias.up.pt/wp-content/uploads/2024/05/peddy-paper-mentoria-mhnc-up_02.jpg"
               alt=""
+              class="h-60 object-cover"
             />
           </div>
         </div>
       </div>
-      <div class="flex px-4 md:px-0 gap-2">
+      <div class="flex md:pb-0 pb-4 md:px-0 gap-2">
         <div
           class="bg-neutral-400 text-white w-12 h-10 flex justify-center items-center text-center p-4"
         >
@@ -497,9 +504,9 @@
         <div class="md:px-40 md:py-20 py-10 px-4">
           <div class="font-light font-lato top-0 text-white">
             <div class="flex md:flex-row flex-col md:gap-32">
-              <h2 class="font-semibold text-[rgb(161,138,77)]">Media</h2>
+              <h2 class="font-semibold py-4 text-[rgb(161,138,77)]">Media</h2>
               <div
-                class="flex md:flex-row flex-col items-start gap-3 md:gap-20 justify-between"
+                class="grid md:grid-cols-4 flex-col items-start gap-3 md:gap-20 justify-between"
               >
                 <div
                   class="flex flex-row justify-start items-start md:gap-2 md:flex-col"
@@ -514,39 +521,43 @@
             </div>
           </div>
           <div class="font-light font-lato py-6 text-white">
-            <div class="flex md:flex-row flex-col py-10">
-              <h2 class="font-semibold w-40 text-[rgb(161,138,77)]">
+            <div class="flex md:flex-row md:gap-24 flex-col md:justify-between">
+              <h2 class="font-semibold w-40 py-4 text-[rgb(161,138,77)]">
                 U.Porto Portals
               </h2>
-              <div class="flex flex-col gap-4">
-                <div
-                  class="flex md:flex-row flex-col gap-3 justify items-start"
-                >
+              <div class="grid md:grid-cols-4 items-start gap-8">
+                <div class="flex flex-col gap-3 justify items-start">
                   <a href=""> CDUP - U.Porto Sports Centre </a>
+                  <a href=""> Educational Innovation </a>
+                  <a href=""> Peer Mentoring </a>
+                </div>
+                <div
+                  class="flex md:flex-col flex-col gap-3 justify-around items-start"
+                >
                   <a href="">
                     Social Support Services of the University of Porto
                     (SASUP)</a
                   >
-                  <a href=""> Former Students Portal</a>
-                  <a href="">UPdigital Portal</a>
+                  <a href=""> U.Porto PRESS</a>
+                  <a href=""> AcademiaUP</a>
                 </div>
                 <div
-                  class="flex md:flex-row flex-col gap-3 justify-around items-start"
+                  class="flex md:flex-col flex-col gap-3 justify-between items-start"
                 >
-                  <a href=""> Educational Innovation </a>
-                  <a href=""> U.Porto PRESS</a>
+                  <a href=""> Former Students Portal</a>
                   <a href=""> U.Porto Innovation </a>
+
+                  <a href=""> Complaints Portal</a>
+                  <a href="">SIGARRA U.Porto</a>
+                </div>
+                <div
+                  class="flex md:flex-col flex-col gap-3 justify-between items-start"
+                >
+                  <a href="">UPdigital Portal</a>
                   <a href=""
                     >Documentation and Information Services and Resources
                     (SRDI)</a
                   >
-                </div>
-                <div
-                  class="flex md:flex-row flex-col gap-3 justify-between items-start"
-                >
-                  <a href=""> Peer Mentoring </a>
-                  <a href=""> AcademiaUP</a>
-                  <a href=""> Complaints Portal</a>
                   <a href="">SIGARRA U.Porto</a>
                 </div>
               </div>
