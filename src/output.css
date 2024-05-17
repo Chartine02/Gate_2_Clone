@@ -1081,6 +1081,10 @@ video {
     height: 80vh;
   }
 
+  .md\:h-screen {
+    height: 100vh;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -1180,6 +1184,10 @@ video {
 
   .md\:pt-80 {
     padding-top: 20rem;
+  }
+
+  .md\:pt-60 {
+    padding-top: 15rem;
   }
 
   .md\:text-5xl {
