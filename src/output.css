@@ -1151,6 +1151,14 @@ video {
     height: 100%;
   }
 
+  .md\:h-\[50vh\] {
+    height: 50vh;
+  }
+
+  .md\:h-\[70vh\] {
+    height: 70vh;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
