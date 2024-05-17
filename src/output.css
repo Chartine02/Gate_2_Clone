@@ -590,10 +590,6 @@ video {
   top: 0.5rem;
 }
 
-.top-20 {
-  top: 5rem;
-}
-
 .top-24 {
   top: 6rem;
 }
@@ -662,6 +658,10 @@ video {
   height: 75%;
 }
 
+.h-60 {
+  height: 15rem;
+}
+
 .h-\[1px\] {
   height: 1px;
 }
@@ -680,14 +680,6 @@ video {
 
 .h-\[70vh\] {
   height: 70vh;
-}
-
-.h-80 {
-  height: 20rem;
-}
-
-.h-60 {
-  height: 15rem;
 }
 
 .w-1\/12 {
@@ -726,10 +718,6 @@ video {
   width: 100%;
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -740,10 +728,6 @@ video {
 
 .items-start {
   align-items: flex-start;
-}
-
-.items-end {
-  align-items: flex-end;
 }
 
 .items-center {
@@ -808,30 +792,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-40 {
-  gap: 10rem;
-}
-
-.gap-80 {
-  gap: 20rem;
-}
-
-.gap-60 {
-  gap: 15rem;
-}
-
-.gap-72 {
-  gap: 18rem;
-}
-
-.gap-28 {
-  gap: 7rem;
-}
-
-.gap-24 {
-  gap: 6rem;
 }
 
 .justify-self-start {
@@ -961,14 +921,8 @@ video {
   padding-bottom: 5rem;
 }
 
-.py-40 {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .pl-2 {
@@ -979,8 +933,8 @@ video {
   padding-top: 5rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-center {
@@ -1076,10 +1030,6 @@ video {
     position: absolute;
   }
 
-  .md\:bottom-20 {
-    bottom: 5rem;
-  }
-
   .md\:bottom-24 {
     bottom: 6rem;
   }
@@ -1094,14 +1044,6 @@ video {
 
   .md\:top-20 {
     top: 5rem;
-  }
-
-  .md\:bottom-0 {
-    bottom: 0px;
-  }
-
-  .md\:left-5 {
-    left: 1.25rem;
   }
 
   .md\:col-span-2 {
@@ -1143,22 +1085,6 @@ video {
     height: 80vh;
   }
 
-  .md\:h-screen {
-    height: 100vh;
-  }
-
-  .md\:h-full {
-    height: 100%;
-  }
-
-  .md\:h-\[50vh\] {
-    height: 50vh;
-  }
-
-  .md\:h-\[70vh\] {
-    height: 70vh;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -1177,10 +1103,6 @@ video {
 
   .md\:w-\[500px\] {
     width: 500px;
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:grid-cols-4 {
@@ -1215,6 +1137,10 @@ video {
     gap: 5rem;
   }
 
+  .md\:gap-24 {
+    gap: 6rem;
+  }
+
   .md\:gap-32 {
     gap: 8rem;
   }
@@ -1225,10 +1151,6 @@ video {
 
   .md\:gap-8 {
     gap: 2rem;
-  }
-
-  .md\:gap-24 {
-    gap: 6rem;
   }
 
   .md\:px-0 {
@@ -1256,16 +1178,12 @@ video {
     padding-bottom: 5rem;
   }
 
-  .md\:pt-80 {
-    padding-top: 20rem;
-  }
-
-  .md\:pb-4 {
-    padding-bottom: 1rem;
-  }
-
   .md\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .md\:pt-80 {
+    padding-top: 20rem;
   }
 
   .md\:text-5xl {
