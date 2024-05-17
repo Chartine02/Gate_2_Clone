@@ -72,7 +72,7 @@
         </div>
       </section>
       <nav
-        class="flex justify-between h-20 px-4 md:px-32 bg-neutral-300 md:h-28 items-center"
+        class="flex justify-between h-20 sticky top-0 z-10 px-4 md:px-32 bg-neutral-300 md:h-28 items-center"
       >
         <img src="images/logo.svg" alt="" class="hidden md:block md:w-96" />
         <div class="flex gap-4 md:hidden">
@@ -120,7 +120,7 @@
       </div>
     </div>
     <nav
-      class="flex justify-between h-20 px-4 md:px-32 md:hidden bg-neutral-300 md:h-28 items-center"
+      class="flex justify-between h-20 px-4 md:px-32 md:hidden sticky top-0 z-10 bg-neutral-300 md:h-28 items-center"
     >
       <img src="images/logo.svg" alt="" class="hidden md:block md:w-96" />
       <div class="flex gap-4 md:hidden">
@@ -155,8 +155,21 @@
       <img
         src="https://www.up.pt/portal/media/images/ijup-2024_12.format-jpeg.jpg"
         alt=""
-        class="[70vh]"
+        class="h-[50vh] object-cover"
       />
+      <div class="flex justify-between w-full absolute top-20">
+        <div
+          class="bg-[rgb(161,138,77)] text-white w-12 h-10 flex justify-center items-center text-center p-4"
+        >
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+
+        <div
+          class="bg-[rgb(161,138,77)] h-10 flex justify-center items-center text-white justify-self-end w-12 p-4"
+        >
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
       <div
         class="bg-stone-800 bg-opacity-80 absolute bottom-0 w-full md:bottom-24 md:left-52 px-4 py-4 flex justify-self-start md:mx-2 flex-col gap-5 text-white md:w-[500px]"
       >
@@ -286,7 +299,7 @@
           </div>
         </div>
       </div>
-      <div class="flex px-4gap-2">
+      <div class="flex px-4 md:px-0 gap-2">
         <div
           class="bg-neutral-400 text-white w-12 h-10 flex justify-center items-center text-center p-4"
         >
@@ -426,7 +439,7 @@
           <a href="">Alumni</a>
           <a href="">U.Porto Students </a>
         </div>
-        <div class="w-1/6 h-[1px] bg-black"></div>
+        <div class="w-40 h-[1px] bg-black"></div>
         <div class="w-full h-[1px] bg-neutral-300"></div>
       </div>
       <div class="flex md:flex-row flex-col gap-6 py-8">
@@ -481,7 +494,7 @@
     </section>
     <footer class="bg-cover md:h-screen w-full relative bg-zinc-800">
       <div class="font-lato text-white">
-        <div class="md:px-40 md:py-20 px-4">
+        <div class="md:px-40 md:py-20 py-10 px-4">
           <div class="font-light font-lato top-0 text-white">
             <div class="flex md:flex-row flex-col md:gap-32">
               <h2 class="font-semibold text-[rgb(161,138,77)]">Media</h2>
@@ -518,26 +531,23 @@
                   <a href="">UPdigital Portal</a>
                 </div>
                 <div
-                  class="flex md:flex-row flex-col gap-3 justify-between items-start"
+                  class="flex md:flex-row flex-col gap-3 justify-around items-start"
                 >
-                  <a href=""> CDUP - U.Porto Sports Centre </a>
-                  <a href="">
-                    Social Support Services of the <br />
-                    University of Porto (SASUP)</a
+                  <a href=""> Educational Innovation </a>
+                  <a href=""> U.Porto PRESS</a>
+                  <a href=""> U.Porto Innovation </a>
+                  <a href=""
+                    >Documentation and Information Services and Resources
+                    (SRDI)</a
                   >
-                  <a href=""> Former Students Portal</a>
-                  <a href="">UPdigital Portal</a>
                 </div>
                 <div
                   class="flex md:flex-row flex-col gap-3 justify-between items-start"
                 >
-                  <a href=""> CDUP - U.Porto Sports Centre </a>
-                  <a href="">
-                    Social Support Services of the <br />
-                    University of Porto (SASUP)</a
-                  >
-                  <a href=""> Former Students Portal</a>
-                  <a href="">UPdigital Portal</a>
+                  <a href=""> Peer Mentoring </a>
+                  <a href=""> AcademiaUP</a>
+                  <a href=""> Complaints Portal</a>
+                  <a href="">SIGARRA U.Porto</a>
                 </div>
               </div>
             </div>
