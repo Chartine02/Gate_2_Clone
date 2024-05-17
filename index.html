@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -167,8 +167,14 @@
         </div>
       </div>
     </section>
-    <section class="bg-zinc-100 px-40 py-20">
-      <h2 class="text-5xl font-light text-[rgb(161,138,77)]">News</h2>
+    <section class="bg-zinc-100 px-40 py-20 text-[rgb(161,138,77)]">
+      <div class="flex justify-between items-center">
+        <h2 class="text-5xl font-light">News</h2>
+        <a href="" class="font-semibold">
+          All news <i class="pl-2 text-md fa-solid fa-circle-chevron-right"></i
+        ></a>
+      </div>
+
       <div class="grid grid-cols-3 gap-6 py-12">
         <div class="bg-white flex flex-col gap-20 justify-between">
           <div class="py-2 px-4">
@@ -226,6 +232,115 @@
           class="bg-[rgb(161,138,77)] text-white w-12 h-10 flex justify-center items-center text-center p-4"
         >
           <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+    </section>
+    <section class="py-20 px-40 font-lato text-xl font-light">
+      <div class="flex gap-52">
+        <div class="relative">
+          <img
+            src="https://www.up.pt/portal/static/images/minerva_01.png"
+            alt=""
+            class="w- h-[350px] ml-40"
+          />
+          <h2 class="absolute top-2 text-5xl font-light text-[rgb(161,138,77)]">
+            We are a University of Excellence!
+          </h2>
+        </div>
+        <div class="flex flex-col gap-6">
+          <div>
+            <p>
+              With over 100 years of history, the University of Porto is a
+              <span class="font-medium">
+                leading teaching and scientific research institution in Portugal
+                and worldwide.</span
+              >
+            </p>
+          </div>
+          <div>
+            <p>
+              Considered
+              <span class="font-medium">
+                the best Portuguese University and one of the best 100 European
+                institutions
+              </span>
+              according to the most important Higher Education rankings, U.Porto
+              combines quality teaching and excellent research with the best
+              academic experience.
+            </p>
+          </div>
+          <div><p class="font-medium">We are waiting for you!</p></div>
+          <div
+            class="flex items-center gap-2 font-semibold text-[rgb(161,138,77)]"
+          >
+            <a href=""
+              >See More
+              <i class="pl-2 text-md fa-solid fa-circle-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="bg-zinc-100 h-1 w-full"></div>
+    <section class="px-40 py-20 font-lato">
+      <h2 class="text-5xl text-[rgb(161,138,77)] font-light">Research</h2>
+      <div class="flex py-10 gap-4">
+        <div class="flex flex-col gap-4">
+          <h2 class="font-bold text-3xl">Research University</h2>
+          <p class="font-light text-xl">
+            With
+            <span class="text-[rgb(161,138,77)]">48 research units</span> and a
+            highly qualified scientific community, the University of Porto is
+            <span>one of the largest producers of science in Portugal,</span>
+            contributing to almost
+            <span class="text-[rgb(161,138,77)]"
+              >25% of all national scientific output.</span
+            >
+          </p>
+          <p class="font-light text-xl">
+            The excellence of our scientific ecosystem is particularly evident
+            in the
+            <span class="text-[rgb(161,138,77)]"
+              >leading position the University occupies in the main
+              international rankings of Higher Education.</span
+            >
+          </p>
+        </div>
+        <div class="">
+          <img
+            src="https://www.up.pt/portal/media/images/investigar-home_destaque.format-jpeg.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section class="bg-[rgb(161,138,77)] text-white px-40 py-20">
+      <div class="flex justify-center gap-32">
+        <img src="images/white-bell.svg" alt="" />
+        <a href="" class="font-semibold text-white">
+          Learn more
+          <i class="pl-2 text-md fa-solid fa-circle-chevron-right"></i
+        ></a>
+      </div>
+      <div
+        class="flex flex-col gap-4 font-lato py-10 items-center justify-center"
+      >
+        <h1 class="font-bold text-4xl">U.PORTO IN FIGURES</h1>
+        <p class="text-5xl font-light">2022/2023</p>
+      </div>
+      <div class="w-full bg-white h-[1px]"></div>
+      <div class="flex justify-around py-6">
+        <div>
+          <h1 class="font-bold text-4xl">+300</h1>
+          <p class="text-3xl font-light">Courses</p>
+        </div>
+        <div>
+          <h1 class="font-bold text-4xl">+300</h1>
+          <p class="text-3xl font-light">Students Enrolled</p>
+        </div>
+        <div>
+          <h1 class="font-bold text-4xl">+300</h1>
+          <p class="text-3xl font-light">Research Units</p>
         </div>
       </div>
     </section>

@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         lato: ["lato", "sans-serif"],
       },
+      colors: {
+        // brown: [rgb(161, 138, 77)],
+      },
     },
   },
   plugins: [],
